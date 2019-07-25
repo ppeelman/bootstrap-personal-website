@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Subresource Integrity (SRI) is a security feature that enables browsers to verify that resources they fetch 
+        (for example, from a CDN) are delivered without unexpected manipulation. 
+        It works by allowing you to provide a cryptographic hash that a fetched resource must match.
+        https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity -->
+
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <!-- Navbar component: https://getbootstrap.com/docs/4.3/components/navbar/ -->
+
+    <header class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+      <a href="#" class="navbar-brand border rounded p-2">Philippe.org</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a href="skills.html" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="skills.html" class="nav-link">Curriculum Vitae</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://www.economaniac.be" class="nav-link">Blog</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Languages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Nederlands</a>
+              <a class="dropdown-item" href="#">Frans</a>
+              <a class="dropdown-item" href="#">English</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Stel een taal voor</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link disabled"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+          <form class="form-inline d-flex align-items-center">
+            <input
+              type="search"
+              class="form-control mr-sm-2"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light mt-sm-0 mt-2" type="submit">
+              Search
+            </button>
+          </form>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Breadcrumb component: https://getbootstrap.com/docs/4.3/components/breadcrumb/ -->
+
+    <!-- <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">Who am I?</li>
+      </ol>
+    </nav> -->
+
+    <main class="pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 mb-4">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-dark">
+                Front-end (static websites)
+              </li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+                class="list-group-item list-group-item-action d-flex justify-content-between"
+                >(Semantic) HTML 5
+                <span
+                  class="badge badge-danger badge-pill"
+                  style="line-height: 1.5;"
+                  >High</span
+                ><span class="sr-only">level of competence</span></a
+              >
+
+              <a
+                href="https://developer.mozilla.org/nl/docs/Web/Accessibility"
+                class="list-group-item list-group-item-action d-flex justify-content-between"
+                >Accessibility (eg. ARIA)
+                <span
+                  class="badge badge-danger badge-pill"
+                  style="line-height: 1.5;"
+                  >Medium</span
+                ><span class="sr-only">level of competence</span></a
+              >
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
+                class="list-group-item list-group-item-action d-flex justify-content-between"
+                >CSS 3
+                <span
+                  class="badge badge-danger badge-pill"
+                  style="line-height: 1.5;"
+                  >High</span
+                ><span class="sr-only">level of competence</span>
+              </a>
+              <a
+                href="https://sass-lang.com/"
+                class="list-group-item list-group-item-action d-flex justify-content-between"
+                >Sass<span
+                  class="badge badge-danger badge-pill"
+                  style="line-height: 1.5;"
+                  >Medium</span
+                ><span class="sr-only">level of competence</span></a
+              >
+              <a
+                href="https://getbootstrap.com/"
+                class="list-group-item list-group-item-action d-flex justify-content-between"
+                >Bootstrap 4<span
+                  class="badge badge-danger badge-pill"
+                  style="line-height: 1.5;"
+                  >High</span
+                ><span class="sr-only">level of competence</span></a
+              >
+              <a
+                href="http://sass-guidelin.es/#architecture"
+                class="list-group-item list-group-item-action"
+                >7-1 architecture pattern</a
+              >
+              <a
+                href="http://getbem.com/"
+                class="list-group-item list-group-item-action"
+                >BEM methodology</a
+              >
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-dark">
+                Front-end (dynamic web apps)
+              </li>
+              <li class="list-group-item">JavaScript (including ES6++)</li>
+              <li class="list-group-item">React (incl. react-router)</li>
+              <li class="list-group-item">Redux (incl. thunk)</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-dark">
+                Programming languages
+              </li>
+              <li class="list-group-item">JavaScript</li>
+              <li class="list-group-item">Python</li>
+              <li class="list-group-item">Java</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
