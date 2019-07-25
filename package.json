@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-personal-website",
+  "version": "1.0.0",
+  "description": "My personal website made with Bootstrap 4 (to refresh Bootstrap)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppeelman/bootstrap-personal-website.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Philippe Peelman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppeelman/bootstrap-personal-website/issues"
+  },
+  "homepage": "https://github.com/ppeelman/bootstrap-personal-website#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
